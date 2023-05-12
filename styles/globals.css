@@ -71,8 +71,9 @@ button {
 }
 
 button:hover {
-  background-color: darken(var(--secondary-color), 10%);
+  background-color: rgba(0, 88, 169, 0.9);
 }
+
 
 
 /* Containers */
@@ -83,7 +84,7 @@ button:hover {
 }
 
 /* Buttons */
-.btn {
+/* .btn {
   display: inline-block;
   padding: 10px 20px;
   font-size: 18px;
@@ -108,7 +109,7 @@ button:hover {
 .btn-primary:hover,
 .btn-secondary:hover {
   background-color: darken(var(--primary-color), 10%);
-}
+} */
 
 
 /* Checkbox */
@@ -192,20 +193,9 @@ button:hover {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 150px;
 }
 
 
-
-
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
 
 

@@ -35,9 +35,10 @@ const CategoryTopThree = ({ products, onSelect }) => {
 
     <>
 
+    <button onClick={() => {console.log(selectedProducts)}}>selectedProducts</button>
 
   <div className="category-top-three-container">
-    <h2>Select Your Favorite Products:</h2>
+    <h3>Please rank your top 3 preference:</h3>
     <div className="category-top-three">
       {products.map((product) => (
         <div
