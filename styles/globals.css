@@ -6,14 +6,197 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Theme */
+:root {
+  --primary-color: #005baa; /* PepsiCo blue */
+  --secondary-color: #e01e3c; /* PepsiCo red */
+  --text-color: #000000; /* Black text */
+  --background-color: #ffffff; /* White background */
 }
 
-* {
-  box-sizing: border-box;
+
+/* Sample Homepage */
+/* Note: This is just a sample homepage and not a complete layout. */
+header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 20px;
 }
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  margin-right: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darken(var(--secondary-color), 10%);
+}
+
+
+/* Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+
+/* Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.checkbox-label {
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 7px;
+  height: 13px;
+  border: solid var(--background-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox:hover:not(:checked) {
+  border-color: var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.category-top-three-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-top-three {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.category-top-three-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.category-top-three-submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -24,3 +207,5 @@ a {
     background: black;
   }
 }
+
+
