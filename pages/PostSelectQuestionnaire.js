@@ -8,23 +8,18 @@ const PostSelectQuestionnaire = () => {
   const router = useRouter();
   const { name, selectedProducts } = router.query;
 
-  if(!selectedProducts) return
 
-  const productIds = selectedProducts;
+  const productIds = selectedProducts || []; // provide default value
   console.log(productIds, productIds)
   const productIds_int = productIds.map((id) => parseInt(id));
 
   const products_array = products_list.products_array;
-  const [formData, setFormData] = useState();
-
-  useEffect(() => {
-
+  const [formData, setFormData] = useState(   
     setFormData(productIds_int.map(() => ({
-      comments: "",
-      uniqueRating: 0,
-    })))
+    comments: "",
+    uniqueRating: 0,
+  }))));
 
-  }, [selectedProducts])
 
   const handleRatingChange = (e, index) => {
     setFormData((prevData) =>
