@@ -4,13 +4,6 @@ import Image from "next/image";
 import styles from "../styles/Questionnaire.module.css";
 import { useRouter } from 'next/router';
 
-const productIds_int = productIds.map((id) => parseInt(id));
-
-const initial_formData =   productIds_int.map(() => ({
-  comments: "",
-  uniqueRating: 0,
-}))
-
 const PostSelectQuestionnaire = () => {
   const router = useRouter();
   const { name, selectedProducts } = router.query;
@@ -19,12 +12,17 @@ const PostSelectQuestionnaire = () => {
 
   const productIds = selectedProducts;
   console.log(productIds, productIds)
+  const productIds_int = productIds.map((id) => parseInt(id));
 
-
+  const initial_formData =   productIds_int.map(() => ({
+    comments: "",
+    uniqueRating: 0,
+  }))
 
   const products_array = products_list.products_array;
   const [formData, setFormData] = useState(
-    initial_formData
+  initial_formData
+  , [selectedProducts]
   );
 
   const handleRatingChange = (e, index) => {
