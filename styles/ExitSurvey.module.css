@@ -1,0 +1,44 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .stars {
+    font-size: 24px;
+    display: flex;
+  }
+  
+  .span {
+    cursor: pointer;
+  }
+  
+  .span + .span {
+    margin-left: 5px;
+  }
+  
+  .activeStar {
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+  }
+  

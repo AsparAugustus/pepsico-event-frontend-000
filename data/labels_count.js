@@ -6,6 +6,7 @@ export default {
     "CSDs",
     "Juices",
     "Diverse Ingredients",
+    "Core Expansion",
     "Flavour",
     "Premium",
     "Affordable"

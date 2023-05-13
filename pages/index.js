@@ -17,6 +17,17 @@ export default function Home() {
       ))}
     </ul>
 
+        <Link href="/Admin">
+      <div className={styles.link}>Admin login page</div>
+    </Link>
+    <Link href="/ExitSurvey">
+      <div className={styles.link}>Exit survey</div>
+    </Link>
+    <Link href="/Admin">
+      <div className={styles.link}>Admin login</div>
+    </Link>
+
+
 
    </>
   )

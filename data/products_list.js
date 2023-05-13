@@ -51,7 +51,7 @@ export default {
   {
     "product_id": "9",
     "name": "Product 9",
-    "category": "Energy and Hydration",
+    "category": "Core Expansion",
     "img": "image1.jpg"
   },
   {

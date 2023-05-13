@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import products_list from "../data/products_list";
 import Image from "next/image";
 import styles from "../styles/Questionnaire.module.css";
+import { useRouter } from 'next/router';
 
-const Questionnaire = () => {
-  const productIds = ["11", "15", "17"];
+const PostSelectQuestionnaire = () => {
+  const router = useRouter();
+  const { name, selectedProducts } = router.query;
+
+  if(!selectedProducts) return
+
+  const productIds = selectedProducts;
+  console.log(productIds, productIds)
   const productIds_int = productIds.map((id) => parseInt(id));
 
   const products_array = products_list.products_array;
@@ -53,6 +60,8 @@ const Questionnaire = () => {
 
   return (
     <div className={styles.questionnaireContainer}>
+
+      <div>Name : {name}</div>
       {productIds_int.map((productId, index) => (
         <div className={styles.questionnaire} key={productId}>
           <h3>{products_array[productId].name}</h3>
@@ -100,4 +109,4 @@ const Questionnaire = () => {
   );
 };
 
-export default Questionnaire;
+export default PostSelectQuestionnaire;
