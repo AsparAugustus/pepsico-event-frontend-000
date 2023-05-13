@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import products_list from "../data/products_list";
 import Image from "next/image";
 import styles from "../styles/Questionnaire.module.css";
