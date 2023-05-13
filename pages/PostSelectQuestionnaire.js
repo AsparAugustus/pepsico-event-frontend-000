@@ -14,12 +14,16 @@ const PostSelectQuestionnaire = () => {
   const productIds_int = productIds.map((id) => parseInt(id));
 
   const products_array = products_list.products_array;
-  const [formData, setFormData] = useState(   
-    setFormData(productIds_int.map(() => ({
-    comments: "",
-    uniqueRating: 0,
-  }))));
+  const [formData, setFormData] = useState();
 
+  useEffect(() => {
+
+    setFormData(productIds_int.map(() => ({
+      comments: "",
+      uniqueRating: 0,
+    })))
+
+  }, [selectedProducts])
 
   const handleRatingChange = (e, index) => {
     setFormData((prevData) =>
