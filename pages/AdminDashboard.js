@@ -293,25 +293,28 @@ const AdminDashboard = () => {
   return (
     <>
       <div>AdminDashboard</div>
+      <IsDevelopment>
+        <button onClick={downloadProductData}>Download products data</button>
+        <button onClick={downloadExitSurvey}>Download exit survey</button>
+        getProductUniquenessCounts
+        <button
+          onClick={() => {
+            console.log(chartValues);
+          }}
+        >
+          chartValues
+        </button>
 
-      <button onClick={downloadProductData}>Download products data</button>
-      <button onClick={downloadExitSurvey}>Download exit survey</button>
-      getProductUniquenessCounts
-      <button
-        onClick={() => {
-          console.log(chartValues);
-        }}
-      >
-        chartValues
-      </button>
+        <button
+          onClick={() => {
+            console.log(data);
+          }}
+        >
+          data
+        </button>
+      </IsDevelopment>
 
-      <button
-        onClick={() => {
-          console.log(data);
-        }}
-      >
-        data
-      </button>
+     
 
       <div>
         {/* <h1>Product Feedbacks</h1>

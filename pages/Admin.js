@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/Admin.module.css';
 import { useRouter } from 'next/router';
+import IsDevelopment from '../Components/IsDevelopment';
 
 const Admin = () => {
   const [username, setUsername] = useState('');
@@ -43,7 +44,11 @@ const Admin = () => {
     <h3 className={styles.title}>Admin Login</h3>
     <div className={styles.container}>
 
-        <button onClick={() => console.log(username, password)}>check state</button>
+      <IsDevelopment>
+      <button onClick={() => console.log(username, password)}>check state</button>
+      </IsDevelopment>
+
+       
    
       <form className={styles.form} onSubmit={handleLogin}>
         <label className={styles.label}>
