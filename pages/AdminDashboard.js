@@ -1,8 +1,19 @@
 import React from "react";
 import downloadExitSurvey from "../utils/downloadExitSurvey";
+import downloadProductData from "../utils/downloadProductData";
 import { useState, useEffect } from "react";
 import { useQuery } from "react-query";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Cell } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  Cell,
+  ResponsiveContainer,
+} from "recharts";
 
 function generateCharts(chartData) {
   const charts = [];
@@ -37,22 +48,50 @@ function generateCharts(chartData) {
     }
 
     charts.push(
-      <div key={category}>
+      <div key={category} style={{ maxWidth: "100vw", marginBottom: "100px" }}>
         <h2>{category}</h2>
-        <BarChart width={500} height={300} data={chartDataArray}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis label={{ value: "Counts", angle: -90, position: "insideLeft" }} />
-          <Tooltip />
-          <Legend />
-          {uniqueLabels.map((label, index) => (
-            <Bar key={label} dataKey={`uniqueCounts[${index}]`} name={label} fill={uniqueColors[index]}>
-              {chartDataArray.map((entry, idx) => (
-                <Cell key={`cell-${idx}`} fill={uniqueColors[index]} />
-              ))}
-            </Bar>
-          ))}
-        </BarChart>
+        <ResponsiveContainer width="100%" height={400}>
+          <BarChart width={1600} height={300} data={chartDataArray} barCategoryGap="10%">
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis
+            height={150}
+            allowDataOverflow={true}
+            minTickGap={0}
+            tickMargin={2}
+            padding="no-gap"
+              tick={{
+                interval: "preserveStartEnd",
+                dy: -5,
+                width: 50,
+                height: 50,
+                wrapStyle: {
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
+                },
+              }}
+              dataKey="name"
+            />
+            <YAxis
+              label={{ value: "Counts", angle: -90, position: "insideLeft" }}
+            />
+            <Tooltip />
+            <Legend verticalAlign="top" height={36}/>
+            {uniqueLabels.map((label, index) => (
+              <Bar
+                key={label}
+                dataKey={`uniqueCounts[${index}]`}
+                name={label}
+                fill={uniqueColors[index]}
+                
+              >
+                {chartDataArray.map((entry, idx) => (
+                  <Cell key={`cell-${idx}`} fill={uniqueColors[index]} />
+                ))}
+              </Bar>
+            ))}
+          </BarChart>
+        </ResponsiveContainer>
       </div>
     );
   }
@@ -66,111 +105,198 @@ const AdminDashboard = () => {
     return res.json();
   });
 
-  
-
-  const [categories, setCategories] = useState(null);
-  
   const [chartValues, setchartValues] = useState(null);
 
-
   const chartData = {
-    "Affordable": {
+    Affordable: {
       "Jumbo Rolled Oats": {
         "Very common": 10000,
-        "Differentiated": 5000,
-        "Super unique": 1000
+        Differentiated: 5000,
+        "Super unique": 1000,
       },
-      "Oats": {
+      Oats: {
         "Very common": 7500,
-        "Differentiated": 10000,
-        "Super unique": 2000
+        Differentiated: 10000,
+        "Super unique": 2000,
       },
       "100% Steel Cut Oats": {
         "Very common": 9000,
-        "Differentiated": 3000,
-        "Super unique": 500
+        Differentiated: 3000,
+        "Super unique": 500,
       },
       "Organic Quinoa": {
         "Very common": 4000,
-        "Differentiated": 6000,
-        "Super unique": 3000
+        Differentiated: 6000,
+        "Super unique": 3000,
       },
       "Brown Rice": {
         "Very common": 12000,
-        "Differentiated": 8000,
-        "Super unique": 1000
+        Differentiated: 8000,
+        "Super unique": 1000,
       },
       "Whole Wheat Pasta": {
         "Very common": 6000,
-        "Differentiated": 4000,
-        "Super unique": 1500
+        Differentiated: 4000,
+        "Super unique": 1500,
       },
       "Multigrain Bread": {
         "Very common": 8000,
-        "Differentiated": 7000,
-        "Super unique": 2000
+        Differentiated: 7000,
+        "Super unique": 2000,
+      },
+      Quinoa: {
+        "Very common": 5000,
+        Differentiated: 3000,
+        "Super unique": 1000,
+      },
+      Millet: {
+        "Very common": 2000,
+        Differentiated: 1500,
+        "Super unique": 500,
+      },
+      Amaranth: {
+        "Very common": 3000,
+        Differentiated: 2500,
+        "Super unique": 800,
+      },
+
+      "Wild Salmon2": {
+        "Very common": 10000,
+        Differentiated: 8000,
+        "Super unique": 500,
+      },
+      Tuna2: {
+        "Very common": 12000,
+        Differentiated: 10000,
+        "Super unique": 1500,
+      },
+      Sardines2: {
+        "Very common": 6000,
+        Differentiated: 5000,
+        "Super unique": 800,
+      },
+      "Wild Salmon": {
+        "Very common": 10000,
+        Differentiated: 8000,
+        "Super unique": 500,
+      },
+      Tun23232a: {
+        "Very common": 12000,
+        Differentiated: 10000,
+        "Super unique": 1500,
+      },
+      Sardi2323nes: {
+        "Very common": 6000,
+        Differentiated: 5000,
+        "Super unique": 800,
+      },
+      "Wild Sa232lmon": {
+        "Very common": 10000,
+        Differentiated: 8000,
+        "Super unique": 500,
+      },
+      Tuna3: {
+        "Very common": 12000,
+        Differentiated: 10000,
+        "Super unique": 1500,
+      },
+      Sardines3: {
+        "Very common": 6000,
+        Differentiated: 5000,
+        "Super unique": 800,
       }
-    },    
-    "Premium": {
+    },
+    Premium: {
       "Black Truffle Hand Cooked Potato Chips": {
         "Very common": Math.floor(Math.random() * 11),
-        "Differentiated": Math.floor(Math.random() * 11),
-        "Super unique": Math.floor(Math.random() * 11)
+        Differentiated: Math.floor(Math.random() * 11),
+        "Super unique": Math.floor(Math.random() * 11),
       },
       "Sour Cream & Onion Mashed Potato Snack": {
         "Very common": Math.floor(Math.random() * 11),
-        "Differentiated": Math.floor(Math.random() * 11),
-        "Super unique": Math.floor(Math.random() * 11)
+        Differentiated: Math.floor(Math.random() * 11),
+        "Super unique": Math.floor(Math.random() * 11),
       },
       "Coco Crunch Granola": {
         "Very common": Math.floor(Math.random() * 11),
-        "Differentiated": Math.floor(Math.random() * 11),
-        "Super unique": Math.floor(Math.random() * 11)
-      }
-    }
+        Differentiated: Math.floor(Math.random() * 11),
+        "Super unique": Math.floor(Math.random() * 11),
+      },
+    },
   };
-  
-  
+
   const charts = generateCharts(chartData);
+
+  function getProductUniquenessCounts(data) {
+    let counts = [];
+    let categories = Object.keys(data);
+    for (let category in data) {
+      let categoryCounts = [];
+      for (let product in data[category]) {
+        let sum = 0;
+        for (let type in data[category][product]) {
+          sum += data[category][product][type];
+        }
+        categoryCounts.push({ name: product, value: sum });
+      }
+      counts.push({ category: category, data: categoryCounts });
+    }
+    return counts;
+  }
+
+  const CountsBarChartFunction = ({ data, category }) => (
+    <ResponsiveContainer width="100%" height={400}>
+      <BarChart width={1600} height={300} data={data} barCategoryGap="10%">
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis
+          height={150}
+          allowDataOverflow={true}
+          minTickGap={0}
+          tickMargin={2}
+          padding="no-gap"
+          tick={{
+            interval: "preserveStartEnd",
+            dy: -5,
+            width: 50,
+            height: 50,
+            wrapStyle: {
+              textOverflow: "ellipsis",
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+            },
+          }}
+          dataKey="name"
+        />
+        <YAxis
+          label={{ value: "Counts", angle: -90, position: "insideLeft" }}
+        />
+        <Tooltip />
+        <Legend verticalAlign="top" height={36} />
+        <Bar dataKey="value" name={category} fill="#8884d8" />
+      </BarChart>
+    </ResponsiveContainer>
+  );
   
 
-  
-  const chartTitles = [
-    "Affordable",
-    "Premium"
-  ];
+  const CountedData = getProductUniquenessCounts(chartData);
 
-
-
-  // const uniqueCounts = data.uniqueCounts;
-
-  // const productFeedbacks = Object.entries(uniqueCounts).map(([product, counts]) => ({
-  //   product,
-  //   veryCommon: counts['Very common'],
-  //   differentiated: counts.Differentiated,
-  //   superUnique: counts['Super unique'],
-  // }));
-
-
-
+  const CountsBarCharts = CountedData.map(({ category, data }) => (
+    <div key={category}>
+      <h2>{category}</h2>
+      <CountsBarChartFunction data={data} category={category} />
+    </div>
+  ));
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Failed to load</div>;
-
-
 
   return (
     <>
       <div>AdminDashboard</div>
 
+      <button onClick={downloadProductData}>Download products data</button>
       <button onClick={downloadExitSurvey}>Download exit survey</button>
-      <button
-        onClick={() => {
-          console.log(categories);
-        }}
-      >
-        categories
-      </button>
+      getProductUniquenessCounts
       <button
         onClick={() => {
           console.log(chartValues);
@@ -209,9 +335,12 @@ const AdminDashboard = () => {
           ))}
         </tbody>
       </table> */}
-    <div>
-      {charts}
-    </div>
+      <h2>Product Category Rating Distribution</h2>
+        <div>{charts}</div>
+
+
+        <h2>Product Name Selected by reviewer</h2>
+        <div>{CountsBarCharts}</div>
       </div>
     </>
   );

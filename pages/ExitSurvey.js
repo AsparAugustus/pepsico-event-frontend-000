@@ -8,10 +8,46 @@ const ExitSurvey = () => {
   const [improvement, setImprovement] = useState('');
   const [feedback, setFeedback] = useState('');
 
+
+
+  const resetForm = () => {
+    setRating(0);
+    setLike('');
+    setImprovement('');
+    setFeedback('');
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // submit form data to backend
-  };
+
+    async function submitFeedback(data) {
+      try {
+        const response = await fetch("/api/post_exitsurvey", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+        const result = await response.json();
+
+        window.alert(`Feedback submitted successfully, thank you.`);
+
+        resetForm()
+
+        return result;
+      } catch (error) {
+        console.error(error);
+        window.alert(`Submission failed, please try again or contact adminstrator. Error: ${error.message}`);
+        return { error: "Failed to update feedback." };
+      }
+    }
+    const stars = rating
+    const initiative = like
+    const further_improvement = improvement
+    submitFeedback({ stars, initiative, further_improvement, feedback });
+  }
 
   return (
     <div className={styles.container}>
@@ -19,6 +55,8 @@ const ExitSurvey = () => {
         <title>Product Bazaar Survey</title>
       </Head>
       <h2 className={styles.title}>Product Bazaar Survey</h2>
+
+      <button onClick={() => {console.log(rating,  like, improvement, feedback)}}>Test</button>
       <form onSubmit={handleSubmit}>
         <div className={styles.question}>
           <label htmlFor="rating">Rate your Overall experience of Product Bazaar:</label>

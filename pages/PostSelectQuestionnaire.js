@@ -31,6 +31,7 @@ const PostSelectQuestionnaire = () => {
       name : name,
       product_category: product_category,
       product_name : products_array.find(p => p.product_id === productId).name,
+      product_img : products_array.find(p => p.product_id === productId).img,
       what_do_you_like_best: "",
       unique: "Very common",
     })))
@@ -98,24 +99,28 @@ const PostSelectQuestionnaire = () => {
           what_do_you_like_best,
           unique,
         });
-  
+
+        // reset the form
+        setFormData(
+          productIds.map((productId) => ({
+            name : name,
+            product_category: product_category,
+            product_name : products_array.find(p => p.product_id === productId).name,
+            what_do_you_like_best: "",
+            unique: 0,
+          }))
+        );
+          
+        window.alert(`Product ${product_name} feedback submitted successfully, thank you.`);
         console.log(`Product ${productIds[i]} feedback submitted successfully.`);
   
       } catch (error) {
+        window.alert(`Product ${product_name} feedback submission failed, please try again or contact adminstrator.`);
         console.error(`Failed to submit feedback for product ${productIds[i]}: ${error}`);
       }
     });
   
-    // reset the form
-    // setFormData(
-    //   productIds.map((productId) => ({
-    //     name : name,
-    //     product_category: product_category,
-    //     product_name : products_array.find(p => p.product_id === productId).name,
-    //     what_do_you_like_best: "",
-    //     unique: 0,
-    //   }))
-    // );
+
   };
 
   function getRatingValue(value) {
@@ -140,40 +145,50 @@ const PostSelectQuestionnaire = () => {
       <button onClick={() => {console.log(category)}}>category</button>
       <button onClick={() => {console.log(product_name)}}>product_name</button>
       <button onClick={() => {console.log(product_category)}}>product_category</button>
+      <button onClick={() => {console.log(productIds)}}>productIds</button>
+      <button onClick={() => {console.log(products_array)}}>products_array</button>
       
 
       {category}
 
       <div>Name : {name}</div>
-      {productIds_int.map((productId, index) => (
-        <div className={styles.questionnaire} key={productId}>
-          <h3>{products_array[productId].name}</h3>
+
+
+      {productIds.map((product, index) => {
+
+        const img = products_array.find((p) => p.product_id === product).img
+        const name = products_array.find((p) => p.product_id === product).name
+        
+        
+        return(
+        <div className={styles.questionnaire} key={product}>
+          <h3>{name}</h3>
           <div className={styles.imageContainer}>
             <Image
-              src="/image1.jpg"
+              src={`/${img}`}
               alt="Product Image"
               width={200}
               height={200}
             />
           </div>
           <div className={styles.fieldContainer}>
-            <label htmlFor={`what_do_you_like_best${productId}`}>
+            <label htmlFor={`what_do_you_like_best${product}`}>
               What do you like best about the product?
             </label>
             <textarea
-              id={`what_do_you_like_best${productId}`}
-              name={`what_do_you_like_best${productId}`}
+              id={`what_do_you_like_best${product}`}
+              name={`what_do_you_like_best${product}`}
               value={formData[index].what_do_you_like_best}
               onChange={(e) => handleCommentChange(e, index)}
             ></textarea>
           </div>
           <div className={styles.fieldContainer}>
-            <label htmlFor={`uniqueRating${productId}`}>
+            <label htmlFor={`uniqueRating${product}`}>
               Do you find this idea unique?
             </label>
             <select
-              id={`unique${productId}`}
-              name={`unique${productId}`}
+              id={`unique${product}`}
+              name={`unique${product}`}
               value={getRatingValue(formData[index].unique)}
               onChange={(e) => handleRatingChange(e, index)}
             >
@@ -183,7 +198,8 @@ const PostSelectQuestionnaire = () => {
             </select>
           </div>
         </div>
-      ))}
+      )}
+      )}
       <button className={styles.submitButton} type="submit" onClick={handleSubmit}>
         Submit
       </button>
