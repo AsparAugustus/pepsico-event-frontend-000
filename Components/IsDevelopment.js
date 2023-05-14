@@ -3,13 +3,10 @@ import { useState } from 'react'
 
 const IsDevelopment = ({children}) => {
 
-const isDevelopment = process.env.NODE_ENV === 'development';
-
-  if (isDevelopment) {
-    return children;
-  } else {
-    return null;
-  }
-};
+    const [isDevelopmentState] = useState(
+        process.env.NODE_ENV === "development"
+    );
+        return( isDevelopmentState ? children : null)
+}
 
 export default IsDevelopment
