@@ -3,6 +3,7 @@ import labels_count from '../../data/labels_count';
 import productsList from '../../data/products_list';
 import { react } from 'react';
 import CategoryTopThree from '../../Components/CategoryTopThree';
+import IsDevelopment from '../../Components/IsDevelopment';
 
 
 
@@ -24,7 +25,12 @@ const CategoryPage = ({ products_in_this_category }) => {
 
       ))}
     </ul> */}
+
+
+    <IsDevelopment>
     <button onClick={() => {console.log(category)}}>category outside</button>
+    </IsDevelopment>
+  
     <CategoryTopThree products={products_in_this_category} category={category}/>
 
     </div>

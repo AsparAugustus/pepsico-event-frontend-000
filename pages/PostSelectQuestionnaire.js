@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Questionnaire.module.css";
 import { useRouter } from 'next/router';
 import axios from "axios";
+import IsDevelopment from "../Components/IsDevelopment";
 
 // selectedProducts
 
@@ -141,12 +142,18 @@ const PostSelectQuestionnaire = () => {
   return (
     <div className={styles.questionnaireContainer}>
 
+      <IsDevelopment>
+
       <button onClick={() => {console.log(formData)}}>formData</button>
       <button onClick={() => {console.log(category)}}>category</button>
       <button onClick={() => {console.log(product_name)}}>product_name</button>
       <button onClick={() => {console.log(product_category)}}>product_category</button>
       <button onClick={() => {console.log(productIds)}}>productIds</button>
       <button onClick={() => {console.log(products_array)}}>products_array</button>
+
+      </IsDevelopment>
+
+
       
 
       {category}
