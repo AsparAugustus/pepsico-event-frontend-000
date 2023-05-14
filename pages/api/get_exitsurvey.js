@@ -1,8 +1,9 @@
 import axios from "axios";
+import config from "../../config";
 
 export default async function handler(req, res) {
   try {
-    const { data } = await axios.get("http://127.0.0.1:8000/exit_survey", {
+    const { data } = await axios.get(`${config.apiUrl}/exit_survey`, {
       responseType: "arraybuffer",
     });
     res.setHeader("Content-Type", "text/csv");

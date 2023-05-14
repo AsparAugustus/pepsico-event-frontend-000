@@ -1,5 +1,7 @@
 import axios from "axios";
 
+import config from "../../config";
+
 export default async function handler(
   req,
   res
@@ -15,7 +17,7 @@ export default async function handler(
         further_improvement,
         feedback
     } = req.body;
-    const response = await axios.post("http://127.0.0.1:8000/exit_survey", {
+    const response = await axios.post(`${config.apiUrl}/exit_survey`, {
         stars,
         initiative,
         further_improvement,

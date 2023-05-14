@@ -1,4 +1,5 @@
 import axios from "axios";
+import config from "../../config";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -13,7 +14,7 @@ export default async function handler(req, res) {
       what_do_you_like_best,
       unique,
     } = req.body;
-    const response = await axios.post("http://127.0.0.1:8000/post_selection_post", {
+    const response = await axios.post(`${config.apiUrl}/post_selection_post`, {
       name,
       product_category,
       product_name,

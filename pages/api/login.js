@@ -1,4 +1,6 @@
 import axios from 'axios';
+import config from "../../config";
+
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -8,7 +10,7 @@ export default async function handler(req, res) {
   const { username, password } = req.body;
 
   try {
-    const flaskRes = await axios.post('http://127.0.0.1:8000/login', {
+    const flaskRes = await axios.post(`${config.apiUrl}/login`, {
       username,
       password,
     });

@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Header from "./Header";
 import Footer from "./Footer";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
+import IsDevelopment from "./IsDevelopment";
 
-const CategoryTopThree = ({ products_in_this_category, products, category }) => {
-  
+const CategoryTopThree = ({
+  products_in_this_category,
+  products,
+  category,
+}) => {
+
+
   const [name, setName] = useState("");
   const [selectedProducts, setSelectedProducts] = useState([]);
-
-
-
-
-
-
 
   const [nameError, setNameError] = useState(false);
   const [error, setError] = useState(false);
@@ -46,28 +46,31 @@ const CategoryTopThree = ({ products_in_this_category, products, category }) => 
     }
 
     router.push({
-      pathname: '/PostSelectQuestionnaire',
+      pathname: "/PostSelectQuestionnaire",
       query: {
         name: name,
         // products_in_this_category: JSON.stringify(products_in_this_category),
         selectedProducts: selectedProducts,
-        category: category
-      }
+        category: category,
+      },
     });
   };
 
   return (
     <>
-      <button
-        onClick={() => {
-          console.log(category);
-        }}
-      >
-        category inside
-      </button>
+      <IsDevelopment>
+        <button
+          onClick={() => {
+            console.log(category);
+          }}
+        >
+          category inside
+        </button>
+      </IsDevelopment>
+
       <div className="name-input-container">
         <div className="form-container">Name</div>
-      
+
         <label>
           <input
             type="form"

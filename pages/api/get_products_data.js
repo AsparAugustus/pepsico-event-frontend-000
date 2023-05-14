@@ -1,8 +1,9 @@
 import axios from "axios";
+import config from "../../config";
 
 export default async function handler(req, res) {
   try {
-    const { data } = await axios.get("http://127.0.0.1:8000/get_products_data", {
+    const { data } = await axios.get(`${config.apiUrl}/get_products_data`, {
       responseType: "arraybuffer",
     });
     res.setHeader("Content-Type", "text/csv");
