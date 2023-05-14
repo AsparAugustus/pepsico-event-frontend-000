@@ -14,7 +14,7 @@ const CategoryPage = ({ products_in_this_category }) => {
 
   console.log("products_in_this_category", products_in_this_category)
 
-
+  
   return (
     <div>
     {/* <ul>
@@ -24,8 +24,8 @@ const CategoryPage = ({ products_in_this_category }) => {
 
       ))}
     </ul> */}
-
-    <CategoryTopThree products={products_in_this_category} />
+    <button onClick={() => {console.log(category)}}>category outside</button>
+    <CategoryTopThree products={products_in_this_category} category={category}/>
 
     </div>
   )
@@ -55,5 +55,5 @@ export async function getStaticProps({ params }) {
   })
 
 
-  return { props: { products_in_this_category } }
+  return { props: { products_in_this_category, category } }
 }

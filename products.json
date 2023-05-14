@@ -1,0 +1,22 @@
+{
+  "products_array": [
+    {
+      "product_id": "6",
+      "name": "damn",
+      "category": "Haha",
+      "img": "Haha_01.jpg"
+    },
+    {
+      "product_id": "7",
+      "name": "damn2",
+      "category": "Haha",
+      "img": "Haha_02.jpg"
+    },
+    {
+      "product_id": "8",
+      "name": "aa",
+      "category": "Haha",
+      "img": "Haha_03.jpg"
+    }
+  ]
+}

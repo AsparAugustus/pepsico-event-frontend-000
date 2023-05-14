@@ -4,10 +4,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { useRouter } from 'next/router';
 
-const CategoryTopThree = ({ products, onSelect }) => {
+const CategoryTopThree = ({ products_in_this_category, products, category }) => {
   
   const [name, setName] = useState("");
   const [selectedProducts, setSelectedProducts] = useState([]);
+
+
+
+
 
 
 
@@ -45,7 +49,9 @@ const CategoryTopThree = ({ products, onSelect }) => {
       pathname: '/PostSelectQuestionnaire',
       query: {
         name: name,
-        selectedProducts: selectedProducts
+        // products_in_this_category: JSON.stringify(products_in_this_category),
+        selectedProducts: selectedProducts,
+        category: category
       }
     });
   };
@@ -54,10 +60,10 @@ const CategoryTopThree = ({ products, onSelect }) => {
     <>
       <button
         onClick={() => {
-          console.log(selectedProducts);
+          console.log(category);
         }}
       >
-        selectedProducts
+        category inside
       </button>
       <div className="name-input-container">
         <div className="form-container">Name</div>

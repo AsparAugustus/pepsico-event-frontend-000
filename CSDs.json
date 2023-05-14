@@ -1,0 +1,70 @@
+{
+  "products_array": [
+    {
+      "product_id": "13",
+      "name": "Apple Flavoured Sparkling Drink",
+      "category": "csds",
+      "img": "csds_01.png"
+    },
+    {
+      "product_id": "14",
+      "name": "Jimmy's Ginger Ale",
+      "category": "csds",
+      "img": "csds_02.png"
+    },
+    {
+      "product_id": "15",
+      "name": "Lahori Jeera",
+      "category": "csds",
+      "img": "csds_03.png"
+    },
+    {
+      "product_id": "16",
+      "name": "Scheppes The Original Mojito & Orange Drink",
+      "category": "csds",
+      "img": "csds_04.png"
+    },
+    {
+      "product_id": "17",
+      "name": "Coca Cola Original Taste Carbonated Water",
+      "category": "csds",
+      "img": "csds_05.png"
+    },
+    {
+      "product_id": "18",
+      "name": "Real Jeera Cola Fizzin",
+      "category": "csds",
+      "img": "csds_06.png"
+    },
+    {
+      "product_id": "19",
+      "name": "Paper Boat Swing Fizz Drinks",
+      "category": "csds",
+      "img": "csds_07.png"
+    },
+    {
+      "product_id": "20",
+      "name": "Campa Cola Carbonated Beverage",
+      "category": "csds",
+      "img": "csds_08.png"
+    },
+    {
+      "product_id": "21",
+      "name": "Campa Cola Jeera Masala Soda",
+      "category": "csds",
+      "img": "csds_09.png"
+    },
+    {
+      "product_id": "22",
+      "name": "Campa Cola Refreshment",
+      "category": "csds",
+      "img": "csds_10.png"
+    },
+    {
+      "product_id": "23",
+      "name": "IndiPop Ginger Lemon Carbonated Fruit Beverage",
+      "category": "csds",
+      "img": "csds_11.png"
+    }
+  ]
+}

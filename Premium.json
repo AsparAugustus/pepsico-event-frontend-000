@@ -1,0 +1,130 @@
+{
+  "products_array": [
+    {
+      "product_id": "97",
+      "name": "Dark Chocolate Flavoured High Protein Oats with Probiotic",
+      "category": "Premium",
+      "img": "premium_01.png"
+    },
+    {
+      "product_id": "98",
+      "name": "Sunshine Muesli",
+      "category": "Premium",
+      "img": "premium_02.png"
+    },
+    {
+      "product_id": "99",
+      "name": "Black Truffle Hand Cooked Potato Chips",
+      "category": "Premium",
+      "img": "premium_03.png"
+    },
+    {
+      "product_id": "100",
+      "name": "Coco Crunch Granola",
+      "category": "Premium",
+      "img": "premium_04.png"
+    },
+    {
+      "product_id": "101",
+      "name": " Dark Chocolate Muesli ",
+      "category": "Premium",
+      "img": "premium_05.png"
+    },
+    {
+      "product_id": "102",
+      "name": "Dark Chocolate & Espresso Crunchy Granola Bars",
+      "category": "Premium",
+      "img": "premium_06.png"
+    },
+    {
+      "product_id": "103",
+      "name": "Peri Peri Flavour Sweet Corn",
+      "category": "Premium",
+      "img": "premium_07.png"
+    },
+    {
+      "product_id": "104",
+      "name": "Lightly Salted Classic Kettle Style Wafers",
+      "category": "Premium",
+      "img": "premium_08.png"
+    },
+    {
+      "product_id": "105",
+      "name": "Hi-Protein Steel Cut Oats",
+      "category": "Premium",
+      "img": "premium_09.png"
+    },
+    {
+      "product_id": "106",
+      "name": "Sour Cream & Onion Mashed Potato Snack",
+      "category": "Premium",
+      "img": "premium_10.png"
+    },
+    {
+      "product_id": "107",
+      "name": "Hot Lime Flavour Turtle Chips, , Mexican Lime Corn Turtle Chips; Masala Chips; Sour and cream onion chips",
+      "category": "Premium",
+      "img": "premium_11.png"
+    },
+    {
+      "product_id": "108",
+      "name": "Yellow Corn Chips",
+      "category": "Premium",
+      "img": "premium_12.png"
+    },
+    {
+      "product_id": "109",
+      "name": "Rice Popped Chips ",
+      "category": "Premium",
+      "img": "premium_13.png"
+    },
+    {
+      "product_id": "110",
+      "name": "Haldiram Peeloz Choco Block",
+      "category": "Premium",
+      "img": "premium_14.png"
+    },
+    {
+      "product_id": "111",
+      "name": "Strawberry Fills Finger Millet Bites",
+      "category": "Premium",
+      "img": "premium_15.png"
+    },
+    {
+      "product_id": "112",
+      "name": "Multigrain Munchiez ",
+      "category": "Premium",
+      "img": "premium_16.png"
+    },
+    {
+      "product_id": "113",
+      "name": "Swiss Style Museli",
+      "category": "Premium",
+      "img": "premium_17.png"
+    },
+    {
+      "product_id": "114",
+      "name": "Chocolate Whey Protein Muesli with Almonds",
+      "category": "Premium",
+      "img": "premium_18.png"
+    },
+    {
+      "product_id": "115",
+      "name": "Oat Bran Hi-Fibre Delicious Cereal",
+      "category": "Premium",
+      "img": "premium_19.png"
+    },
+    {
+      "product_id": "116",
+      "name": "Ganjang Honey Flavour Rice Cracker",
+      "category": "Premium",
+      "img": "premium_20.png"
+    },
+    {
+      "product_id": "117",
+      "name": "The Original Corn Chips",
+      "category": "Premium",
+      "img": "premium_21.png"
+    }
+  ]
+}

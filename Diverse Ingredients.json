@@ -1,0 +1,112 @@
+{
+  "products_array": [
+    {
+      "product_id": "44",
+      "name": "Go Grain Crunchies",
+      "category": "Diverse Ingredients",
+      "img": "diverse_01.png"
+    },
+    {
+      "product_id": "45",
+      "name": "Saffola Munchiez ",
+      "category": "Diverse Ingredients",
+      "img": "diverse_02.png"
+    },
+    {
+      "product_id": "46",
+      "name": "Toasted Millet Muesli Cranberry and Almond",
+      "category": "Diverse Ingredients",
+      "img": "diverse_03.png"
+    },
+    {
+      "product_id": "47",
+      "name": "100% Plant Protein Pro Muesli Breakfast Cereal",
+      "category": "Diverse Ingredients",
+      "img": "diverse_04.png"
+    },
+    {
+      "product_id": "48",
+      "name": "Moong Dal Natkhat",
+      "category": "Diverse Ingredients",
+      "img": "diverse_05.png"
+    },
+    {
+      "product_id": "49",
+      "name": "Root Veggie Chips",
+      "category": "Diverse Ingredients",
+      "img": "diverse_06.png"
+    },
+    {
+      "product_id": "50",
+      "name": "Fruits + Nuts & Seeds Muesli",
+      "category": "Diverse Ingredients",
+      "img": "diverse_07.png"
+    },
+    {
+      "product_id": "51",
+      "name": "Millet Muesli with Nuts & Fruits",
+      "category": "Diverse Ingredients",
+      "img": "diverse_08.png"
+    },
+    {
+      "product_id": "52",
+      "name": "Healthy Crunch Millet Muesli",
+      "category": "Diverse Ingredients",
+      "img": "diverse_09.png"
+    },
+    {
+      "product_id": "53",
+      "name": "Millet Butter Murukku, Millet Butter Karasev",
+      "category": "Diverse Ingredients",
+      "img": "diverse_10.png"
+    },
+    {
+      "product_id": "54",
+      "name": "Sundrop Nutrify",
+      "category": "Diverse Ingredients",
+      "img": "diverse_11.png"
+    },
+    {
+      "product_id": "55",
+      "name": "Butter Garlic Naan Chips",
+      "category": "Diverse Ingredients",
+      "img": "diverse_12.png"
+    },
+    {
+      "product_id": "56",
+      "name": "Organic Quinoa Power Rice Cakes with Himalayan Rock Salt",
+      "category": "Diverse Ingredients",
+      "img": "diverse_13.png"
+    },
+    {
+      "product_id": "57",
+      "name": "Sweet N' Salted Rice Crisps",
+      "category": "Diverse Ingredients",
+      "img": "diverse_14.png"
+    },
+    {
+      "product_id": "58",
+      "name": "Crunchy Butter Murukku",
+      "category": "Diverse Ingredients",
+      "img": "diverse_15.png"
+    },
+    {
+      "product_id": "59",
+      "name": "Dosa Chips with Pani Puri",
+      "category": "Diverse Ingredients",
+      "img": "diverse_16.png"
+    },
+    {
+      "product_id": "60",
+      "name": "Toasted Millet Muesli",
+      "category": "Diverse Ingredients",
+      "img": "diverse_17.png"
+    },
+    {
+      "product_id": "61",
+      "name": "GoodDiet Brown Rice Chips With Oats",
+      "category": "Diverse Ingredients",
+      "img": "diverse_18.png"
+    }
+  ]
+}

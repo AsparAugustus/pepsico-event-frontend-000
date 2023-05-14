@@ -1,0 +1,106 @@
+{
+  "products_array": [
+    {
+      "product_id": "62",
+      "name": " Saffola Masala Coriander Oats",
+      "category": "Core Expansion",
+      "img": "core_01.png"
+    },
+    {
+      "product_id": "63",
+      "name": "Yogabar Oats Veggies Masala ",
+      "category": "Core Expansion",
+      "img": "core_02.png"
+    },
+    {
+      "product_id": "64",
+      "name": "Saffola Karara Crunch",
+      "category": "Core Expansion",
+      "img": "core_03.png"
+    },
+    {
+      "product_id": "65",
+      "name": "Bingo Hashtags Cream & Onion Potato Chips; Spicy Masala Potato Chips",
+      "category": "Core Expansion",
+      "img": "core_04.png"
+    },
+    {
+      "product_id": "66",
+      "name": "Bingo Cheese Flavour Nachos",
+      "category": "Core Expansion",
+      "img": "core_05.png"
+    },
+    {
+      "product_id": "67",
+      "name": "ITC Bingo Original Style Salt & Chili Sprinkled Potato Chips",
+      "category": "Core Expansion",
+      "img": "core_06.png"
+    },
+    {
+      "product_id": "68",
+      "name": "Parle Masala Masti Flavoured Karare Masala Snacks",
+      "category": "Core Expansion",
+      "img": "core_07.png"
+    },
+    {
+      "product_id": "69",
+      "name": "Haldiram's Puffcorns ",
+      "category": "Core Expansion",
+      "img": "core_08.png"
+    },
+    {
+      "product_id": "70",
+      "name": "Sundrop Instant Rolled Oats",
+      "category": "Core Expansion",
+      "img": "core_09.png"
+    },
+    {
+      "product_id": "71",
+      "name": "Yogarbar 100% Rolled Oats",
+      "category": "Core Expansion",
+      "img": "core_10.png"
+    },
+    {
+      "product_id": "72",
+      "name": "Pringles Limited Edition Assortment Potato Crisps",
+      "category": "Core Expansion",
+      "img": "core_11.png"
+    },
+    {
+      "product_id": "73",
+      "name": "Mast Masala Masala Oats",
+      "category": "Core Expansion",
+      "img": "core_12.png"
+    },
+    {
+      "product_id": "74",
+      "name": "Magic Masala Flavoured Potato Chips",
+      "category": "Core Expansion",
+      "img": "core_13.png"
+    },
+    {
+      "product_id": "75",
+      "name": "Haldirams Smart Oats & white oats",
+      "category": "Core Expansion",
+      "img": "core_14.png"
+    },
+    {
+      "product_id": "76",
+      "name": "Millet Muesli",
+      "category": "Core Expansion",
+      "img": "core_15.png"
+    },
+    {
+      "product_id": "77",
+      "name": "Crax Chips ",
+      "category": "Core Expansion",
+      "img": "core_16.png"
+    },
+    {
+      "product_id": "78",
+      "name": "Cornitos Nacho Chips - Sweet Chili",
+      "category": "Core Expansion",
+      "img": "core_17.png"
+    }
+  ]
+}
