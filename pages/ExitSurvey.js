@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import styles from '../styles/ExitSurvey.module.css';
+import IsDevelopment from '../Components/IsDevelopment';
 
 const ExitSurvey = () => {
   const [rating, setRating] = useState(0);
@@ -56,7 +57,11 @@ const ExitSurvey = () => {
       </Head>
       <h2 className={styles.title}>Product Bazaar Survey</h2>
 
+      <IsDevelopment>
       <button onClick={() => {console.log(rating,  like, improvement, feedback)}}>Test</button>
+      </IsDevelopment>
+
+      
       <form onSubmit={handleSubmit}>
         <div className={styles.question}>
           <label htmlFor="rating">Rate your Overall experience of Product Bazaar:</label>
