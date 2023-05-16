@@ -231,7 +231,7 @@ const AdminDashboard = () => {
 
   function getProductUniquenessCounts(data) {
     if(!data) return
-    
+
     let counts = [];
     let categories = Object.keys(data);
     for (let category in data) {
@@ -294,6 +294,7 @@ const AdminDashboard = () => {
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Failed to load</div>;
+  if (!data) return <div>There is no data yet!</div>;
 
   return (
     <>
