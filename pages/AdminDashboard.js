@@ -300,7 +300,7 @@ const AdminDashboard = () => {
 
   return (
     <>
-      <h2>AdminDashboard</h2>
+      <h2 style={{marginBottom : "30px"}}>AdminDashboard</h2>
       <IsDevelopment>
 
         <button
@@ -325,7 +325,7 @@ const AdminDashboard = () => {
 
      
 
-      <div>
+      <div style={{marginBottom : "30px"}}>
         {/* <h1>Product Feedbacks</h1>
       <table>
         <thead>
@@ -347,11 +347,11 @@ const AdminDashboard = () => {
           ))}
         </tbody>
       </table> */}
-      <h2 className="my-5">Product Category Rating Distribution</h2>
+      <h2 style={{marginBottom : "30px"}}>Product Category Rating Distribution</h2>
         <div>{charts}</div>
 
 
-        <h2>Product Name Selected by reviewer</h2>
+        <h2 style={{marginBottom : "30px"}}>Product Name Selected by reviewer</h2>
         <div>{CountsBarCharts}</div>
       </div>
     </>
