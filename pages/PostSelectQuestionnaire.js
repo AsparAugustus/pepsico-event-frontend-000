@@ -141,7 +141,9 @@ const PostSelectQuestionnaire = () => {
     }
   }
 
-  if(!formData) return 
+  if(!formData) return
+  if(!selectedProducts) return
+
 
   return (
     <div className={styles.questionnaireContainer}>
