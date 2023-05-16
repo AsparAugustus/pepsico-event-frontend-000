@@ -5,19 +5,24 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-left">
-    
+          <div className="header-link">
+            <Image
+              src="/pepsi.jpeg"
+              alt="PepsiCo R&D"
+              width={300}
+              height={85}
+            />
+          </div>
       </div>
       <div className="header-right">
-        <Link href="/">
-          <a className="header-link">
+          <div className="header-link">
             <Image
               src="/PepsiCo.svg"
               alt="PepsiCo logo"
-              width={100}
-              height={50}
+              width={130}
+              height={70}
             />
-          </a>
-        </Link>
+          </div>
       </div>
       <style jsx>{`
         .header {

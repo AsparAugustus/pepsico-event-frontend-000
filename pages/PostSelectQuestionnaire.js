@@ -114,6 +114,10 @@ const PostSelectQuestionnaire = () => {
           
         window.alert(`Product ${product_name} feedback submitted successfully, thank you.`);
         console.log(`Product ${productIds[i]} feedback submitted successfully.`);
+
+        window.location.href = "/ThankYouPage";
+
+
   
       } catch (error) {
         window.alert(`Product ${product_name} feedback submission failed, please try again or contact adminstrator.`);
@@ -172,7 +176,7 @@ const PostSelectQuestionnaire = () => {
           <h3>{name}</h3>
           <div className={styles.imageContainer}>
             <Image
-              src={`/${img}`}
+              src={`/products/${img}`}
               alt="Product Image"
               width={200}
               height={200}

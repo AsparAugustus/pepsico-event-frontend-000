@@ -1,70 +1,58 @@
 {
   "products_array": [
     {
-      "product_id": "13",
-      "name": "Apple Flavoured Sparkling Drink",
-      "category": "csds",
-      "img": "csds_01.png"
-    },
-    {
       "product_id": "14",
-      "name": "Jimmy's Ginger Ale",
-      "category": "csds",
-      "img": "csds_02.png"
+      "name": "Appy Fizz",
+      "category": "CSDs",
+      "img": "csds_00.jpg"
     },
     {
       "product_id": "15",
-      "name": "Lahori Jeera",
-      "category": "csds",
-      "img": "csds_03.png"
+      "name": "Bisleri Spicy",
+      "category": "CSDs",
+      "img": "csds_01.jpg"
     },
     {
       "product_id": "16",
-      "name": "Scheppes The Original Mojito & Orange Drink",
-      "category": "csds",
-      "img": "csds_04.png"
+      "name": "Lahori Jeera",
+      "category": "CSDs",
+      "img": "csds_02.jpg"
     },
     {
       "product_id": "17",
-      "name": "Coca Cola Original Taste Carbonated Water",
-      "category": "csds",
-      "img": "csds_05.png"
+      "name": "Coca Cola Original Taste ",
+      "category": "CSDs",
+      "img": "csds_03.jpg"
     },
     {
       "product_id": "18",
-      "name": "Real Jeera Cola Fizzin",
-      "category": "csds",
-      "img": "csds_06.png"
+      "name": "Real Jeera Cola Fizzin ",
+      "category": "CSDs",
+      "img": "csds_04.jpg"
     },
     {
       "product_id": "19",
-      "name": "Paper Boat Swing Fizz Drinks",
-      "category": "csds",
-      "img": "csds_07.png"
+      "name": "Campa Green Lemon",
+      "category": "CSDs",
+      "img": "csds_05.jpg"
     },
     {
       "product_id": "20",
-      "name": "Campa Cola Carbonated Beverage",
-      "category": "csds",
-      "img": "csds_08.png"
+      "name": "Catch Nimbu paani; Catch Jeera",
+      "category": "CSDs",
+      "img": "csds_06.jpg"
     },
     {
       "product_id": "21",
-      "name": "Campa Cola Jeera Masala Soda",
-      "category": "csds",
-      "img": "csds_09.png"
+      "name": "Bisleri Pop Orange & Cola",
+      "category": "CSDs",
+      "img": "csds_07.jpg"
     },
     {
       "product_id": "22",
-      "name": "Campa Cola Refreshment",
-      "category": "csds",
-      "img": "csds_10.png"
-    },
-    {
-      "product_id": "23",
-      "name": "IndiPop Ginger Lemon Carbonated Fruit Beverage",
-      "category": "csds",
-      "img": "csds_11.png"
+      "name": "Jain Jeera; Jain Shikanji ",
+      "category": "CSDs",
+      "img": "csds_08.jpg"
     }
   ]
 }

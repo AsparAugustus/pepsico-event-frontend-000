@@ -23,7 +23,7 @@ function generateProducts(numProducts, categoryId, categoryPrefix, categoryName,
       product_id: currentId.toString(),
       name: name,
       category: categoryName,
-      img: `${categoryPrefix}_${(products.length + 1).toString().padStart(2, '0')}.png`
+      img: `${categoryPrefix}_${(products.length).toString().padStart(2, '0')}.jpg`
     };
     products.push(product);
     generateProducts(numProducts, categoryId, categoryPrefix, categoryName, products);

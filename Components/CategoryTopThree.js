@@ -66,6 +66,15 @@ const CategoryTopThree = ({
         >
           category inside
         </button>
+
+
+        <button
+          onClick={() => {
+            console.log(products);
+          }}
+        >
+          products
+        </button>
       </IsDevelopment>
 
       <div className="name-input-container">
@@ -90,14 +99,14 @@ const CategoryTopThree = ({
               style={{
                 border: selectedProducts.includes(product.product_id)
                   ? "2px solid blue"
-                  : "2px solid black",
+                  : "1px solid grey",
               }}
             >
               <Image
-                src={`/${product.img}`}
+                src={`/products/${product.img}`}
                 alt={product.name}
-                width={60}
-                height={100}
+                width={140}
+                height={140}
               />
               <br />
               <label>

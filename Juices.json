@@ -1,5 +1,94 @@
 {
   "products_array": [
-   
+    {
+      "product_id": "23",
+      "name": "Real Alphonso Mango Nectar",
+      "category": "Juices",
+      "img": "juices_00.jpg"
+    },
+    {
+      "product_id": "24",
+      "name": "Real 100% Juice",
+      "category": "Juices",
+      "img": "juices_01.jpg"
+    },
+    {
+      "product_id": "25",
+      "name": "Real Fiber +",
+      "category": "Juices",
+      "img": "juices_02.jpg"
+    },
+    {
+      "product_id": "26",
+      "name": "Paperboat Swing ",
+      "category": "Juices",
+      "img": "juices_03.jpg"
+    },
+    {
+      "product_id": "27",
+      "name": " B Natural Fruit & Bits ",
+      "category": "Juices",
+      "img": "juices_04.jpg"
+    },
+    {
+      "product_id": "28",
+      "name": "Minute Maid Nutri+ Honey infused ",
+      "category": "Juices",
+      "img": "juices_05.jpg"
+    },
+    {
+      "product_id": "29",
+      "name": "Appy Juice",
+      "category": "Juices",
+      "img": "juices_06.jpg"
+    },
+    {
+      "product_id": "30",
+      "name": "Fresho! Juice",
+      "category": "Juices",
+      "img": "juices_07.jpg"
+    },
+    {
+      "product_id": "31",
+      "name": "Real Masala Juices",
+      "category": "Juices",
+      "img": "juices_08.jpg"
+    },
+    {
+      "product_id": "32",
+      "name": "Fresca Peach with chunks ",
+      "category": "Juices",
+      "img": "juices_09.jpg"
+    },
+    {
+      "product_id": "33",
+      "name": "Mazaa Mango Juice",
+      "category": "Juices",
+      "img": "juices_10.jpg"
+    },
+    {
+      "product_id": "34",
+      "name": "Storia100% Tender Coconut Water",
+      "category": "Juices",
+      "img": "juices_11.jpg"
+    },
+    {
+      "product_id": "35",
+      "name": "PaperBoat Coconut Water",
+      "category": "Juices",
+      "img": "juices_12.jpg"
+    },
+    {
+      "product_id": "36",
+      "name": "ITC B Natural Select Tender Coconut Water ",
+      "category": "Juices",
+      "img": "juices_13.jpg"
+    },
+    {
+      "product_id": "37",
+      "name": "Real Activ Coconut + Aloe Vera drink",
+      "category": "Juices",
+      "img": "juices_14.jpg"
+    }
   ]
 }

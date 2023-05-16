@@ -226,7 +226,8 @@ const AdminDashboard = () => {
     },
   };
 
-  const charts = generateCharts(chartData);
+  //use chartdata for random generated data
+  const charts = generateCharts(data);
 
   function getProductUniquenessCounts(data) {
     let counts = [];
@@ -279,7 +280,8 @@ const AdminDashboard = () => {
   );
   
 
-  const CountedData = getProductUniquenessCounts(chartData);
+  //use chartData for random data
+  const CountedData = getProductUniquenessCounts(data);
 
   const CountsBarCharts = CountedData.map(({ category, data }) => (
     <div key={category}>

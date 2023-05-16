@@ -192,7 +192,8 @@ button:hover {
   margin: 10px;
   padding: 10px;
   text-align: center;
-  width: 150px;
+  width: 250px;
+  height: 200px;
 }
 
 .category-top-three-submit-container {
