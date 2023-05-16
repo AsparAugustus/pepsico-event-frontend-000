@@ -2,12 +2,6 @@ export default {
     products_array : [
 
       {
-        "product_id": "0",
-        "name": "X-Treme Original ",
-        "category": "Energy, Hydration & Evening Drinks",
-        "img": "energy_00.jpg"
-      },
-      {
         "product_id": "1",
         "name": "Red Bull Summer Edition",
         "category": "Energy, Hydration & Evening Drinks",
@@ -247,7 +241,7 @@ export default {
 
 
 
-      
+
 
 
 
