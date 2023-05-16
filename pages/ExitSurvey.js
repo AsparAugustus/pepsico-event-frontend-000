@@ -37,6 +37,8 @@ const ExitSurvey = () => {
 
         resetForm()
 
+        window.location.href = "/ThankYouPage";
+
         return result;
       } catch (error) {
         console.error(error);
