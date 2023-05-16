@@ -102,12 +102,24 @@ const CategoryTopThree = ({
                   : "1px solid grey",
               }}
             >
-              <Image
-                src={`/products/${product.img}`}
-                alt={product.name}
-                width={140}
-                height={140}
-              />
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  minWidth: '100px',
+  minHeight: '160px' // Added min height of 160px
+}}>
+  <img
+    src={`/products/${product.img}`}
+    alt={product.name}
+    style={{
+      maxWidth: '100%',
+      maxHeight: '100%',
+      objectFit: 'contain'
+    }}
+  />
+</div>
+
               <br />
               <label>
                 <input

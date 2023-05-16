@@ -112,7 +112,7 @@ const PostSelectQuestionnaire = () => {
           }))
         );
           
-        window.alert(`Product ${product_name} feedback submitted successfully, thank you.`);
+        // window.alert(`Product ${product_name} feedback submitted successfully, thank you.`);
         console.log(`Product ${productIds[i]} feedback submitted successfully.`);
 
         window.location.href = "/ThankYouPage";
