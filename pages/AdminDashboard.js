@@ -300,11 +300,9 @@ const AdminDashboard = () => {
 
   return (
     <>
-      <div>AdminDashboard</div>
+      <h2>AdminDashboard</h2>
       <IsDevelopment>
-        <button onClick={downloadProductData}>Download products data</button>
-        <button onClick={downloadExitSurvey}>Download exit survey</button>
-        getProductUniquenessCounts
+
         <button
           onClick={() => {
             console.log(chartValues);
@@ -321,6 +319,9 @@ const AdminDashboard = () => {
           data
         </button>
       </IsDevelopment>
+
+      <button onClick={downloadProductData}>Download products data</button>
+        <button onClick={downloadExitSurvey}>Download exit survey</button>
 
      
 
@@ -346,7 +347,7 @@ const AdminDashboard = () => {
           ))}
         </tbody>
       </table> */}
-      <h2>Product Category Rating Distribution</h2>
+      <h2 className="my-5">Product Category Rating Distribution</h2>
         <div>{charts}</div>
 
 
