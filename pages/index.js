@@ -13,7 +13,15 @@ export default function Home() {
 
 
 
-      {labels_count.categories.map((category) => (
+    <Link href="/Admin">
+      <div className={styles.link}>Admin login page</div>
+    </Link>
+
+
+  </IsDevelopment>
+    
+
+  {labels_count.categories.map((category) => (
         <div key={category}>
           <Link href={`/category/${category}`}>
             <div>{category}</div>
@@ -22,16 +30,10 @@ export default function Home() {
       ))}
 
 
-        <Link href="/Admin">
-      <div className={styles.link}>Admin login page</div>
-    </Link>
+
     <Link href="/ExitSurvey">
       <div className={styles.link}>Exit survey</div>
     </Link>
-
-
-  </IsDevelopment>
-    
 
 
 
