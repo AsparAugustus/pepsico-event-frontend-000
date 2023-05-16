@@ -230,6 +230,8 @@ const AdminDashboard = () => {
   const charts = generateCharts(data);
 
   function getProductUniquenessCounts(data) {
+    if(!data) return
+    
     let counts = [];
     let categories = Object.keys(data);
     for (let category in data) {
