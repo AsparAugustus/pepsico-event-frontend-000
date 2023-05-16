@@ -226,6 +226,10 @@ const AdminDashboard = () => {
     },
   };
 
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Failed to load</div>;
+  if (!data) return <div>There is no data yet!</div>;
+
   //use chartdata for random generated data
   const charts = generateCharts(data);
 
@@ -292,9 +296,7 @@ const AdminDashboard = () => {
     </div>
   ));
 
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Failed to load</div>;
-  if (!data) return <div>There is no data yet!</div>;
+
 
   return (
     <>
