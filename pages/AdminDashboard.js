@@ -233,6 +233,8 @@ const AdminDashboard = () => {
   //use chartdata for random generated data
   const charts = generateCharts(data);
 
+  console.log("dataaaaaaaaaaaaaa", data)
+
   function getProductUniquenessCounts(data) {
     if(!data) return
 
