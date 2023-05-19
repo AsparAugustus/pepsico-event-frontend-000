@@ -1,0 +1,142 @@
+{
+  "products_array": [
+    {
+      "product_id": "51",
+      "name": "Yogabar Oats Veggies Masala ",
+      "category": "Core Expansion",
+      "img": "core_00.jpg"
+    },
+    {
+      "product_id": "52",
+      "name": "Saffola Karara Crunch",
+      "category": "Core Expansion",
+      "img": "core_01.jpg"
+    },
+    {
+      "product_id": "53",
+      "name": "Bingo Hashtags",
+      "category": "Core Expansion",
+      "img": "core_02.jpg"
+    },
+    {
+      "product_id": "54",
+      "name": "Bingo Nachos",
+      "category": "Core Expansion",
+      "img": "core_03.jpg"
+    },
+    {
+      "product_id": "55",
+      "name": "ITC Bingo Original Style Salt & Chili Sprinkled Potato Chips",
+      "category": "Core Expansion",
+      "img": "core_04.jpg"
+    },
+    {
+      "product_id": "56",
+      "name": "Sundrop Instant Rolled Oats",
+      "category": "Core Expansion",
+      "img": "core_05.jpg"
+    },
+    {
+      "product_id": "57",
+      "name": "Limited Edition Assortment Pringles",
+      "category": "Core Expansion",
+      "img": "core_06.jpg"
+    },
+    {
+      "product_id": "58",
+      "name": "Fast & Up Good Eats instant Flavour oats",
+      "category": "Core Expansion",
+      "img": "core_07.jpg"
+    },
+    {
+      "product_id": "59",
+      "name": "Crax Potato Chips ",
+      "category": "Core Expansion",
+      "img": "core_08.jpg"
+    },
+    {
+      "product_id": "60",
+      "name": "Cornitos Nacho Chips - Sweet Chili",
+      "category": "Core Expansion",
+      "img": "core_09.jpg"
+    },
+    {
+      "product_id": "61",
+      "name": "Haldiram's Smart Oats",
+      "category": "Core Expansion",
+      "img": "core_10.jpg"
+    },
+    {
+      "product_id": "62",
+      "name": "Monsoon Harvest Jumbo Rolled Oats",
+      "category": "Core Expansion",
+      "img": "core_11.jpg"
+    },
+    {
+      "product_id": "63",
+      "name": "Yogabar 100% Steel Cut Oats",
+      "category": "Core Expansion",
+      "img": "core_12.jpg"
+    },
+    {
+      "product_id": "64",
+      "name": "First Cropt Cream N Onion Potato Chips",
+      "category": "Core Expansion",
+      "img": "core_13.jpg"
+    },
+    {
+      "product_id": "65",
+      "name": "Yoga Bar Fruits plus nut seeds ",
+      "category": "Core Expansion",
+      "img": "core_14.jpg"
+    },
+    {
+      "product_id": "66",
+      "name": "First Crop Oats",
+      "category": "Core Expansion",
+      "img": "core_15.jpg"
+    },
+    {
+      "product_id": "67",
+      "name": "Bikano Salted Wafers",
+      "category": "Core Expansion",
+      "img": "core_16.jpg"
+    },
+    {
+      "product_id": "68",
+      "name": "Makino Nacho Set ",
+      "category": "Core Expansion",
+      "img": "core_17.jpg"
+    },
+    {
+      "product_id": "69",
+      "name": "Parle FullToss",
+      "category": "Core Expansion",
+      "img": "core_18.jpg"
+    },
+    {
+      "product_id": "70",
+      "name": "cornitos cheese and herbs; cornitos tomato mexicana ",
+      "category": "Core Expansion",
+      "img": "core_19.jpg"
+    },
+    {
+      "product_id": "71",
+      "name": "Baggry's Oats Atta ",
+      "category": "Core Expansion",
+      "img": "core_20.jpg"
+    },
+    {
+      "product_id": "72",
+      "name": "Haldiram's future life oats atta ",
+      "category": "Core Expansion",
+      "img": "core_21.jpg"
+    },
+    {
+      "product_id": "73",
+      "name": "Oat Bran Hi-Fibre Delicious Cereal",
+      "category": "Core Expansion",
+      "img": "core_22.jpg"
+    }
+  ]
+}

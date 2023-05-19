@@ -1,0 +1,82 @@
+{
+  "products_array": [
+    {
+      "product_id": "38",
+      "name": "Go Grain Crunchies",
+      "category": "Diverse Ingredients",
+      "img": "diverse_00.jpg"
+    },
+    {
+      "product_id": "39",
+      "name": "Saffola Munchiez ",
+      "category": "Diverse Ingredients",
+      "img": "diverse_01.jpg"
+    },
+    {
+      "product_id": "40",
+      "name": "Monsoon Harvest Toasted Millet Muesli ",
+      "category": "Diverse Ingredients",
+      "img": "diverse_02.jpg"
+    },
+    {
+      "product_id": "41",
+      "name": "100% Plant Protein Pro Muesli",
+      "category": "Diverse Ingredients",
+      "img": "diverse_03.jpg"
+    },
+    {
+      "product_id": "42",
+      "name": "Millet Pongal",
+      "category": "Diverse Ingredients",
+      "img": "diverse_04.jpg"
+    },
+    {
+      "product_id": "43",
+      "name": "Naan Chips",
+      "category": "Diverse Ingredients",
+      "img": "diverse_05.jpg"
+    },
+    {
+      "product_id": "44",
+      "name": "Organic Quinoa Power Rice Cake",
+      "category": "Diverse Ingredients",
+      "img": "diverse_06.jpg"
+    },
+    {
+      "product_id": "45",
+      "name": "GoodDiet Brown Rice Chips With Oats",
+      "category": "Diverse Ingredients",
+      "img": "diverse_07.jpg"
+    },
+    {
+      "product_id": "46",
+      "name": "Saffola Munchiez Roasted Makhana",
+      "category": "Diverse Ingredients",
+      "img": "diverse_08.jpg"
+    },
+    {
+      "product_id": "47",
+      "name": "Crunchy Butter Murukku",
+      "category": "Diverse Ingredients",
+      "img": "diverse_09.jpg"
+    },
+    {
+      "product_id": "48",
+      "name": "PVR 4700 BC Protein Pops",
+      "category": "Diverse Ingredients",
+      "img": "diverse_10.jpg"
+    },
+    {
+      "product_id": "49",
+      "name": "Unknown",
+      "category": "Diverse Ingredients",
+      "img": "diverse_11.jpg"
+    },
+    {
+      "product_id": "50",
+      "name": "Rajdhani Makhana ",
+      "category": "Diverse Ingredients",
+      "img": "diverse_12.jpg"
+    }
+  ]
+}

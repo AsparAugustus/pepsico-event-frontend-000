@@ -1,0 +1,82 @@
+{
+  "products_array": [
+    {
+      "product_id": "84",
+      "name": "Kettle Wafers",
+      "category": "Premium",
+      "img": "premium_00.jpg"
+    },
+    {
+      "product_id": "85",
+      "name": "Black Truffle Hand Cooked Potato Chips",
+      "category": "Premium",
+      "img": "premium_01.jpg"
+    },
+    {
+      "product_id": "86",
+      "name": "Rice Popped Chips ",
+      "category": "Premium",
+      "img": "premium_02.jpg"
+    },
+    {
+      "product_id": "87",
+      "name": "Jacob's Mini Cheddar",
+      "category": "Premium",
+      "img": "premium_03.jpg"
+    },
+    {
+      "product_id": "88",
+      "name": "Dark Chocolate & Espresso Crunchy Granola Bars",
+      "category": "Premium",
+      "img": "premium_04.jpg"
+    },
+    {
+      "product_id": "89",
+      "name": "4700BC  Popped Corn Chips +",
+      "category": "Premium",
+      "img": "premium_05.jpg"
+    },
+    {
+      "product_id": "90",
+      "name": "4700 BC Corns",
+      "category": "Premium",
+      "img": "premium_06.jpg"
+    },
+    {
+      "product_id": "91",
+      "name": "Why Fryy Potato Chips",
+      "category": "Premium",
+      "img": "premium_07.jpg"
+    },
+    {
+      "product_id": "92",
+      "name": "Haldiram Peeloz ",
+      "category": "Premium",
+      "img": "premium_08.jpg"
+    },
+    {
+      "product_id": "93",
+      "name": "Multigrain Munchiez ",
+      "category": "Premium",
+      "img": "premium_09.jpg"
+    },
+    {
+      "product_id": "94",
+      "name": "Swiss Style Museli",
+      "category": "Premium",
+      "img": "premium_10.jpg"
+    },
+    {
+      "product_id": "95",
+      "name": "Chocolate Whey Protein Muesli with Almonds",
+      "category": "Premium",
+      "img": "premium_11.jpg"
+    },
+    {
+      "product_id": "96",
+      "name": "Strawberry Fills Finger Millet Bites",
+      "category": "Premium",
+      "img": "premium_12.jpg"
+    }
+  ]
+}

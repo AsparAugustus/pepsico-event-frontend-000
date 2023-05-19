@@ -1,0 +1,64 @@
+{
+  "products_array": [
+    {
+      "product_id": "74",
+      "name": "Cornado Lentil Twisters",
+      "category": "Flavour",
+      "img": "flavour_00.jpg"
+    },
+    {
+      "product_id": "75",
+      "name": "Bingo Street Bites Dahi Chaat remix",
+      "category": "Flavour",
+      "img": "flavour_01.jpg"
+    },
+    {
+      "product_id": "76",
+      "name": "MB Dark Chocolate Muesli Munchies",
+      "category": "Flavour",
+      "img": "flavour_02.jpg"
+    },
+    {
+      "product_id": "77",
+      "name": "Britannia 50 50 Potazos Crisps",
+      "category": "Flavour",
+      "img": "flavour_03.jpg"
+    },
+    {
+      "product_id": "78",
+      "name": "Flaveo Grain Chips",
+      "category": "Flavour",
+      "img": "flavour_04.jpg"
+    },
+    {
+      "product_id": "79",
+      "name": "Dark Chocolate Flavoured High Protein Oats with Probiotic",
+      "category": "Flavour",
+      "img": "flavour_05.jpg"
+    },
+    {
+      "product_id": "80",
+      "name": "Parle Piri Piri Potato Chips",
+      "category": "Flavour",
+      "img": "flavour_06.jpg"
+    },
+    {
+      "product_id": "81",
+      "name": "Crunchy Dark Choco Berry Muesli",
+      "category": "Flavour",
+      "img": "flavour_07.jpg"
+    },
+    {
+      "product_id": "82",
+      "name": "Beer 'n Barbeque Popped Potato Chips",
+      "category": "Flavour",
+      "img": "flavour_08.jpg"
+    },
+    {
+      "product_id": "83",
+      "name": "Orion Turtle Chips",
+      "category": "Flavour",
+      "img": "flavour_09.jpg"
+    }
+  ]
+}

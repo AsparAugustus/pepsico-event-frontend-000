@@ -1,0 +1,52 @@
+{
+  "products_array": [
+    {
+      "product_id": "97",
+      "name": "Fun Flips Chinese Puffs",
+      "category": "Affordable",
+      "img": "affordable_00.jpg"
+    },
+    {
+      "product_id": "98",
+      "name": "Fun flips party pack",
+      "category": "Affordable",
+      "img": "affordable_01.jpg"
+    },
+    {
+      "product_id": "99",
+      "name": "Pepitos Corn Puffs",
+      "category": "Affordable",
+      "img": "affordable_02.jpg"
+    },
+    {
+      "product_id": "100",
+      "name": "Haldiram's Puffcorns ",
+      "category": "Affordable",
+      "img": "affordable_03.jpg"
+    },
+    {
+      "product_id": "101",
+      "name": "Peppy Variety Pack",
+      "category": "Affordable",
+      "img": "affordable_04.jpg"
+    },
+    {
+      "product_id": "102",
+      "name": "Crax Curls Chatpata Masala",
+      "category": "Affordable",
+      "img": "affordable_05.jpg"
+    },
+    {
+      "product_id": "103",
+      "name": "Crax Ring Masala Mania",
+      "category": "Affordable",
+      "img": "affordable_06.jpg"
+    },
+    {
+      "product_id": "104",
+      "name": "Crax Balls ",
+      "category": "Affordable",
+      "img": "affordable_07.jpg"
+    }
+  ]
+}
